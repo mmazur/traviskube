@@ -50,9 +50,6 @@ _minishift() {
   minishift version
   minishift start \
     --vm-driver=generic \
-    --remote-ipaddress 127.0.0.1 \
-    --remote-ssh-user root \
-    --remote-ssh-key $HOME/.ssh/ci_id_rsa \
     $(condarg "--openshift-version=v" $CVER)
 
   # Needed to watch all pods to come up
