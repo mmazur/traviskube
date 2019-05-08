@@ -49,7 +49,7 @@ _minishift() {
 
   minishift version
   minishift start \
-    --vm-driver=generic \
+    --vm-driver=kvm \
     $(condarg "--openshift-version=v" $CVER)
 
   # Needed to watch all pods to come up
